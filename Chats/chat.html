@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="../index.html">
+                <i class="fas fa-regular fa-bomb"></i>
+                <span>Boom social</span>
+            </a>
+            <div class="searchbar">
+                <input type="text" id="searchbox" placeholder="Find your friends" autocomplete="off">
+                <button type="button" class="post-button">Booming</button>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar" id="mySidebar">
+        <div class="menu-container">
+            <a class="menu-item" href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a class="menu-item" href="../Video/video.html">
+                <i class="fas fa-regular fa-tv"></i>
+                <span>Video</span>
+            </a>
+            <a class="menu-item" id="main-page" href="chat.html">
+                <i class="fas fa-solid fa-comments"></i>
+                <span>Chats</span>
+            </a>
+            <a class="menu-item" href="../Voice/voice.html">
+                <i class="fas fa-solid fa-headset"></i>
+                <span>Audio</span>
+            </a>
+            <a class="menu-item" href="../Games/game.html">
+                <i class="fas fa-solid fa-gamepad"></i>
+                <span>Games</span>
+            </a>
+            <a class="menu-item" href="../Profile/profile.html">
+                <i class="fas fa-solid fa-user" href="../Profile/profile.html"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="account">
+            <i class="fas fa-solid fa-universal-access"></i>
+            <a>Login</a>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="people-container">
+            <input type="text" placeholder="Search..."><button type="submit"><i class="fa fa-search"></i></button>
+            <div class="contact-container">
+                <div class="contact">
+                    <img src="https://data.whicdn.com/images/344524632/original.jpg" alt="">
+                    <div class="contact-info">
+                        <p class="name">John Smith <i class="fa-solid fa-circle-dot"></i></p>
+                        <p class="status-container">Status:<span id="status">Active</span></p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <img src="https://i.pinimg.com/222x/93/c4/f7/93c4f799d58e96badce9c10fd000db8c.jpg" alt="">
+                    <div class="contact-info">
+                        <p class="name">Mary Smith <i class="fa-solid fa-circle-dot"></i></p>
+                        <p class="status-container">Status:<span id="status">Active</span></p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <img src="https://i.pinimg.com/474x/77/14/6d/77146d30735f76eae80547e217be6443.jpg" alt="">
+                    <div class="contact-info">
+                        <p class="name">Tony Lenon <i class="fa-solid fa-circle-dot"></i></p>
+                        <p class="status-container">Status:<span id="status">Active</span></p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="chat-name">
+                <img src="https://data.whicdn.com/images/344524632/original.jpg" alt="">
+                <div class="chat-info">
+                    <span class="main-name">John Smith</span><br>
+                    <span>@JohnS123</span>
+                </div>
+            </div>
+            <div class="chat-content">
+                <div class="chats">
+                    <div class="guest-chat">
+                        <img src="https://data.whicdn.com/images/344524632/original.jpg" alt="">
+                        <p class="guest-sentence">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis magnam excepturi labore quod necessitatibus fugiat ipsa eveniet! Temporibus earum tenetur fugiat nostrum dolores officia, iste porro est magni ut?</p>
+                    </div>
+                    <div class="my-chat">
+                        <p class="my-sentence">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis magnam excepturi labore quod necessitatibus fugiat ipsa eveniet! Temporibus earum tenetur fugiat nostrum dolores officia, iste porro est magni ut?</p>
+                    </div>
+                </div>
+                <div class="type-bar">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <input type="text" id="sendText" placeholder="Tell them something">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="chat-content">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
