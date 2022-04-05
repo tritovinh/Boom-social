@@ -23,7 +23,7 @@ let followarr = [
     },
     {
         video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2MzyUws1Ois\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-        tittle:"I can’t believe Jaden is 21?!?!"
+        tittle:"I can't believe Jaden is 21?!?!"
     },
     {
         video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/jX8hxcCSjog\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
@@ -54,7 +54,6 @@ let followarr = [
         tittle:"If Nursing Was Like Programming"
     },
 ];
-
 let followVideo = document.getElementById("Follow")
 function renderFollow(){
     for(let i of followarr){
@@ -68,16 +67,104 @@ function renderFollow(){
 }
 renderFollow();
 
-let newsarr = [
-    {
-        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/z_czmz_bJqk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-        tittle:"How Ludwig Became The Biggest Twitch Streamer…Then Left For Youtube"
-    }
-];
-
 let musicarr = [
     {
-        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/z_czmz_bJqk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-        tittle:"How Ludwig Became The Biggest Twitch Streamer…Then Left For Youtube"
-    }
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/WFsAon_TWPQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Charlie Puth - Light Switch [Official Music Video]"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/D9G1VOjN_84\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/TP1xs1hF2ZE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Anne-Marie - 2002 (Live At Brighton Music Hall 2018)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/TUVcZfQe-Kw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Dua Lipa - Levitating Featuring DaBaby (Official Music Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"The Weeknd - Out of Time (Official Video)"
+    },
 ];
+let musicVideo = document.getElementById("Music")
+function renderMusic(){
+    for(let i of musicarr){
+        musicVideo.innerHTML +=`
+        <div class="video-item">
+            ${i.video}
+            <p>${i.tittle}</p>
+        </div>
+        `
+    }
+}
+renderMusic();
+
+let newsarr = [
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/82_9QVaa6R4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Growing atrocities from war in Ukraine spark outrage l WNT"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/oyNCOgNxAtM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Russia is focusing on Eastern Ukraine. Retired general explains how to stop them"
+    },
+       {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/lRkLhhSz3cU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Support Growing Within EU For Russian Oil Embargo"
+    },
+];
+let newsVideo = document.getElementById("News")
+function renderNews(){
+    for(let i of newsarr){
+        newsVideo.innerHTML +=`
+        <div class="video-item">
+            ${i.video}
+            <p>${i.tittle}</p>
+        </div>
+        `
+    }
+}
+renderNews();
