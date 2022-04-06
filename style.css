@@ -176,9 +176,20 @@ nav #searchbox {
 
 #read-post-container {
   margin: 10px 0 10px 0;
-  background-color: var(--element-background);
+  background-color: var(--color-background);
   border-radius: 20px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+#read-post-container .read-post{
+  margin-top: 20px;
+  background-color: var(--element-background);
+  padding: 5px;
+  border-radius: 15px;
 }
 
 #read-post-container .read-post .profile-post {
@@ -255,16 +266,16 @@ nav #searchbox {
   margin: 0 5px 0 5px;
 }
 
-button{
+.reaction-info button{
   background-color: white;
   border: none;
 }
 
-button.liked {
+.reaction-info button.liked {
   color: red;
 }
 
-button.liked i{
+.reaction-info button.liked i{
   animation: anim 0.5s ease-in-out;
   -webkit-animation: anim 0.5s ease-in-out;
   color: red;
