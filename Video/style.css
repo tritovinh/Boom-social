@@ -152,6 +152,8 @@ nav #searchbox {
   width: 30%;
   border-radius: 15px;
   border: none;
+  background-color: var(--color-background);
+  color: var(--text-color);
 }
 
 .type-container button:hover {

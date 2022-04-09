@@ -305,9 +305,14 @@ nav #searchbox {
   justify-content: space-around;
 }
 
+.chat-content .type-bar button{
+  background-color: var(--color-background);
+}
+
 .chat-content .type-bar i{
   font-size: 30px;
   color: #ff6249;
+  background-color: var(--color-background);
 }
 
 .chat-content .type-bar input{
@@ -328,7 +333,7 @@ nav #searchbox {
   --text-color: black;
 }
 
-.dark-mode{
+.dark-theme{
   --color-background: #18191a;
   --element-background: #242526;
   --text-color: white;

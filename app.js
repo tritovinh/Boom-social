@@ -148,7 +148,7 @@ function renderPost(){
                     </div>
                     <div>
                         <span id="comments"></span>
-                        <button class="comment" class="comment">
+                        <button class="comments">
                             <i class="fa-solid fa-message"></i>
                             <span>Comment</span>
                         </button>
@@ -160,7 +160,7 @@ function renderPost(){
                             alt="">
                         <div class="comment-content">
                             <p class="comment-name">${post.commentName1}</p>
-                            <p>${post.commentContent1}</p</>>
+                            <p>${post.commentContent1}</p</>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ function showSlides() {
 
 // like button
 function liked(){
-    let element = document.getElementsById("like");
+    var element = document.getElementById("like");
     element.classList.toggle("liked");
 }
 

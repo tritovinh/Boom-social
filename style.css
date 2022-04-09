@@ -141,7 +141,8 @@ nav #searchbox {
 .write-post i {
   font-size: 35px;
   margin: auto;
-  border: solid black;
+  border: solid var(--text-color);
+  color: var(--text-color);
   border-radius: 50%;
   padding: 5px;
 }
@@ -207,6 +208,7 @@ nav #searchbox {
   flex-direction: column;
   justify-content: space-around;
   padding: 8px;
+  color: var(--text-color);
 }
 
 #read-post-container .read-post .profile-post .name span{
@@ -219,6 +221,7 @@ nav #searchbox {
 }
 
 .read-post .post-content {
+  color: var(--text-color);
   font-size: 20px;
   margin-left: 8%;
 }
@@ -255,10 +258,18 @@ nav #searchbox {
 .reaction-info{
   display:flex;
   justify-content: space-around;
-  border-top: 1px solid #e4e6eb;
+  border-top: 1px solid #aaaaab;
+  border-bottom: 1px solid #aaaaab;
+  width: 90%;
+  border-radius: 15px;
+  margin: auto;
   margin-top: 8px;
   padding: 8px;
   font-size: 15px;
+}
+
+.reaction-info button{
+  background-color: var(--element-backgroud)
 }
 
 .reaction-info i{
@@ -266,19 +277,22 @@ nav #searchbox {
   margin: 0 5px 0 5px;
 }
 
-.reaction-info button{
-  background-color: white;
-  border: none;
+button {
+  background: #fff;
+  border: unset;
+  outline: 0;
+  cursor: pointer;
+  color: #65676b;
+  padding: 5px 10px;
 }
 
-.reaction-info button.liked {
+button.liked {
   color: red;
 }
 
-.reaction-info button.liked i{
+button.liked i{
   animation: anim 0.5s ease-in-out;
   -webkit-animation: anim 0.5s ease-in-out;
-  color: red;
 }
 
 @keyframes anim {
@@ -314,7 +328,8 @@ nav #searchbox {
 .comment .comment-content{
   margin-left: 10px;
   width: 95%;
-  background-color: #f2f2f2;
+  background-color: var(--color-background);
+  color: var(--text-color);
   border-radius: 5px;
   padding: 10px;
   padding-top: 8px;
