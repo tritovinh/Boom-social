@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
 }
 
 header {
@@ -46,7 +46,7 @@ nav .logo {
 
 nav #searchbox {
   border-radius: 20px;
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
   color: var(--text-color);
   padding: 5px;
   margin: auto;
@@ -119,7 +119,7 @@ nav #searchbox {
 
 #main-page {
   border-left: solid #ff6249 8px;
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
 }
 
 /* Post container */
@@ -269,7 +269,7 @@ nav #searchbox {
 }
 
 .reaction-info button{
-  background-color: var(--element-backgroud)
+  background-color: var(--element-background)
 }
 
 .reaction-info i{
@@ -342,13 +342,13 @@ button.liked i{
 }
 
 :root{
-  --color-backgroud: #f0f2f5;
+  --color-background: #f0f2f5;
   --element-background: #ffffff;
   --text-color: black;
 }
 
 .dark-theme{
-  --color-backgroud: #18191a;
+  --color-background: #18191a;
   --element-background: #242526;
   --text-color: white;
 }

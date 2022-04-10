@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
 }
 
 header {
@@ -46,7 +46,7 @@ nav .logo {
 
 nav #searchbox {
   border-radius: 20px;
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
   color: var(--text-color);
   padding: 5px;
   margin: auto;
@@ -119,17 +119,133 @@ nav #searchbox {
 
 #main-page {
   border-left: solid #ff6249 8px;
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
+}
+
+/* video container style */
+.Voice-container {
+  margin-left: calc(15% + 30px);
+  margin-top: 88px;
+  width: 80%;
+  height: 85%;
+  padding: 10px;
+  position: fixed;
+  border-radius: 15px;
+  color: var(--text-color);
+  background-color: var(--element-background);
+}
+
+.type-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: var(--color-background);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.type-container button {
+  font-size: 25px;
+  height: 30px;
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--color-background);
+  color: var(--text-color);
+}
+
+.type-container button:hover {
+  background-color: var(--element-background);  
+}
+
+.type-container button.active {
+  background-color: #ff6249;
+  color: white;
+}
+
+.voice{
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+  width: 100%;
+  height: 95%;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.voice-box {
+  width: 45%;
+  height: 250px;
+  background-color: var(--color-background);
+  position: relative;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.voice-box .title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.voice-box .title .main-title:hover {
+  text-decoration: underline red;
+}
+
+.voice-box .title .description {
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+.voice-box .status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+  padding: 2px 8px 2px 8px;
+  border-radius: 10px;
+}
+
+.voice-box .host {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5715c;
+  font-size: 30px;
+}
+
+.voice-box .host img{
+  width: 8%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.voice-box .host p{
+  margin: auto;
+  margin-left: 10px;
 }
 
 :root{
-  --color-backgroud: #f0f2f5;
+  --color-background: #f0f2f5;
   --element-background: #ffffff;
   --text-color: black;
 }
 
 .dark-theme{
-  --color-backgroud: #18191a;
+  --color-background: #18191a;
   --element-background: #242526;
   --text-color: white;
 }
