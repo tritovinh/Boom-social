@@ -226,7 +226,7 @@ nav #searchbox {
   margin-left: 8%;
 }
 
-.slideshow-container {
+/* .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -253,7 +253,8 @@ nav #searchbox {
 
 @media only screen{
   .prev, .next,.text {font-size: 11px}
-}
+} */
+
 
 .reaction-info{
   display:flex;

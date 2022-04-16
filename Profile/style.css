@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
 }
 
 header {
@@ -46,7 +46,7 @@ nav .logo {
 
 nav #searchbox {
   border-radius: 20px;
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
   color: var(--text-color);
   padding: 5px;
   margin: auto;
@@ -119,17 +119,151 @@ nav #searchbox {
 
 #main-page {
   border-left: solid #ff6249 8px;
-  background-color: var(--color-backgroud);
+  background-color: var(--color-background);
 }
 
+/* main profile page */
+.profile-container {
+  margin-left: calc(15% + 30px);
+  margin-top: 88px;
+  width: 80%;
+  height: 85%;
+  padding: 10px;
+  position: fixed;
+  border-radius: 15px;
+  color: var(--text-color);
+  background-color: var(--element-background);
+  overflow: scroll;
+}
+
+.profile-info-container {
+  position: relative;
+  width: auto;
+  height: 650px;
+}
+
+.profile-info-container .profile-pic {
+  position: absolute;
+  top: 36%;
+  left: 30px;
+  width: 30%;
+  border-radius: 50%;
+  height: 40%;
+  z-index: 1;
+}
+
+.profile-info-container .profile-pic img{
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  border: solid 5px var(--color-background);
+}
+
+.profile-info-container .background-pic {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.profile-info-container .background-pic img{
+  width: 100%;
+  height: auto;
+}
+
+.profile-info-container .profile-info{
+  margin-top: 10%;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.profile-info-container .profile-info .name #realName{
+  font-size: 35px;
+}
+
+.profile-info-container .profile-info .info{
+  margin-top: 10px;
+}
+
+.profile-info-container .edit{
+  position: absolute;
+  right: 5px;
+  top: 63%;
+}
+
+.profile-info-container .edit button{
+  font-size: 30px;
+  border: 1px solid #f5715c;
+  background-color: var(--color-background);
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.profile-info-container .edit button:hover{
+  font-size: 30px;
+  border: 1px solid #f5715c;
+  background-color: #f5715c;
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.profile-container .write-post {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  border-radius: 20px;
+}
+
+.profile-container .write-post i {
+  font-size: 35px;
+  margin: auto;
+  border: solid var(--text-color);
+  color: var(--text-color);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.post-button2 {
+  border-radius: 25px;
+  padding: 5px;
+  height: 70%;
+  width: 25%;
+  margin: auto;
+  border: solid 3px #e4e6eb;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #e4e6eb;
+}
+
+.post-button2:hover{
+  background-color: #ff6249;
+  color: white;
+  font-size: 2vh;
+}
+
+#post-writing {
+  background-color: var(--element-background);
+  color: var(--text-color);
+  border-radius: 25px;
+  width: 65%;
+  padding: 5px;
+  height: 50%;
+  margin: auto;
+  font-size: 20px;
+}
+
+/* dark mode */
 :root{
-  --color-backgroud: #f0f2f5;
+  --color-background: #f0f2f5;
   --element-background: #ffffff;
   --text-color: black;
 }
 
 .dark-theme{
-  --color-backgroud: #18191a;
+  --color-background: #18191a;
   --element-background: #242526;
   --text-color: white;
 }
