@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="about">
+            <a class="logo" href="../index.html">
+                <i class="fas fa-regular fa-bomb"></i>
+                <span>Boom social</span>
+            </a>
+            <div class="info">
+                <p>The socialize platform to prevent mankind from autism.</p>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login-container">
+                <input type="text" placeholder="Email adress or phone number" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="button" id="login" onclick="join()">Log In</button> <hr>
+                <button id="signup" onclick="signUp()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div id="signupModel" class="model">
+        <div class="model-content">
+            <div class="title">
+                <h1>Sign Up</h1>
+                <p>It's simple and quick.</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your fullname"><br>
+                <input type="text" placeholder="Username"><br>
+                <input type="password" placeholder="Passwords"><br>
+                <label for="date">Date of birth</label>
+                <input type="date"><br>
+                <button id="signup-final" onclick="signup">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
