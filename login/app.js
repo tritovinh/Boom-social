@@ -1,48 +1,53 @@
-let array = [
+const accountArray = [
     {
-        usernames: "pink panther",
+        userName: "pink panther",
         accountName: "@ppanther99",
-        passwords: "123456789"
+        password: "123456789"
     },
     {
-        usernames: "robert polanderson",
+        userName: "robert polanderson",
         accountName: "@roberthandsome",
-        passwords: "123456789"
+        password: "123456789"
     },
     {
-        usernames: "charlie brown",
+        userName: "charlie brown",
         accountName: "@purplebrown11",
-        passwords: "123456789"
+        password: "123456789"
     },
 ];
-
-function join(){
-    let submitArray = document.getElementsByTagName("input")
+const submitArray = document.getElementsByClassName("login-form")
+function join() {
     console.log(submitArray);
     let usernames = submitArray[0].value.toLowerCase();
     let passwords = submitArray[1].value.toLowerCase();
-    console.log(usernames)
-    console.log(passwords)
 
-    for(let i of array) {
-        if (usernames == array[i.usernames] & passwords == array[i.passwords]){
-            localStorage.setItem(profileName, array[i.usernames]);
-            localStorage.setItem(accountName, array[i.accountName])
-            windown.locations.assign("../index.html");
-        }
-        else{
-            window.alert("Wrong username or password")
+    for (let i of accountArray) {
+        if (usernames == accountArray[i].userName && passwords == accountArray[i].password) {
+            localStorage.setItem("profileName", accountArray[i].userName);
+            localStorage.setItem("accountName", accountArray[i].accountName);
+            console.log(localStorage.getItem("profileName"))
+            return
         }
     }
+    window.alert("Wrong username or password")
 };
 
 let modal = document.getElementById("signupModel");
-function signUp(){
+function signUp() {
     modal.style.display = "block"
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+const signUpForm = document.getElementsByClassName("signup-form")
+function signup() {
+    let name = signUpForm[2].value.toLowerCase();
+    let usernameLogin = signUpForm[3].value.toLowerCase();
+    let password = signUpForm[4].value.toLowerCase();
+    let dateOfBirth = signUpForm[5].value.toLowerCase();
+    console.log(signUpForm);
 }

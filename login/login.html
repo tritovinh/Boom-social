@@ -26,8 +26,8 @@
         </div>
         <div class="login">
             <div class="login-container">
-                <input type="text" placeholder="Email adress or phone number" required><br>
-                <input type="password" placeholder="Password" required><br>
+                <input type="text" placeholder="Email adress or phone number" class="login-form" required><br>
+                <input type="password" placeholder="Password" class="login-form" required><br>
                 <button type="button" id="login" onclick="join()">Log In</button> <hr>
                 <button id="signup" onclick="signUp()">Sign Up</button>
             </div>
@@ -40,12 +40,12 @@
                 <p>It's simple and quick.</p>
             </div>
             <div class="form">
-                <input type="text" placeholder="Your fullname"><br>
-                <input type="text" placeholder="Username"><br>
-                <input type="password" placeholder="Passwords"><br>
+                <input type="text" placeholder="Your fullname" class="signup-form"><br>
+                <input type="text" placeholder="Username" class="signup-form"><br>
+                <input type="password" placeholder="Passwords" class="signup-form"><br>
                 <label for="date">Date of birth</label>
                 <input type="date"><br>
-                <button id="signup-final" onclick="signup">Sign Up</button>
+                <button id="signup-final" onclick="signup()">Sign Up</button>
             </div>
         </div>
     </div>
