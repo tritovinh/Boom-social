@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 header {
@@ -23,7 +23,7 @@ nav {
   justify-content: space-around;
   font-size: 40px;
   border-radius: 15px;
-  background-color: var(--element-background);
+  background-color: var(--element-light);
   margin: 10px 0 10px 0;
   cursor: pointer;
 }
@@ -46,8 +46,8 @@ nav .logo {
 
 nav #searchbox {
   border-radius: 20px;
-  background-color: var(--color-background);
-  color: var(--text-color);
+  background-color: var(--light-background);
+  color: var(--text-light);
   padding: 5px;
   margin: auto;
   font-size: 15px;
@@ -78,8 +78,8 @@ nav #searchbox {
   font-size: 25px;
   top: 10%;
   left: 15px;
-  background-color: var(--element-background);
-  color: var(--text-color);
+  background-color: var(--element-light);
+  color: var(--text-light);
   width: 15%;
   height: 85%;
   border-radius: 15px;
@@ -103,7 +103,7 @@ nav #searchbox {
   padding: 10px 0 10px 20px;
   text-decoration: none;
   display: block;
-  color: var(--text-color);
+  color: var(--text-light);
   font-size: 25px;
   cursor: pointer;
 }
@@ -124,7 +124,7 @@ nav #searchbox {
 
 #main-page {
   border-left: solid #ff6249 8px;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 /* Post container */
@@ -138,7 +138,7 @@ nav #searchbox {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--element-background);
+  background-color: var(--element-light);
   border-radius: 20px;
   margin: 0 0 10px 0;
 }
@@ -146,8 +146,8 @@ nav #searchbox {
 .write-post i {
   font-size: 35px;
   margin: auto;
-  border: solid var(--text-color);
-  color: var(--text-color);
+  border: solid var(--text-light);
+  color: var(--text-light);
   border-radius: 50%;
   padding: 5px;
 }
@@ -171,7 +171,7 @@ nav #searchbox {
 }
 
 #post-writing {
-  background-color: var(--element-background);
+  background-color: var(--element-light);
   border-radius: 25px;
   width: 65%;
   padding: 5px;
@@ -182,7 +182,7 @@ nav #searchbox {
 
 #read-post-container {
   margin: 10px 0 10px 0;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
   border-radius: 20px;
   padding: 15px;
   display: flex;
@@ -193,7 +193,7 @@ nav #searchbox {
 
 #read-post-container .read-post{
   margin-top: 20px;
-  background-color: var(--element-background);
+  background-color: var(--element-light);
   padding: 5px;
   border-radius: 15px;
 }
@@ -213,7 +213,7 @@ nav #searchbox {
   flex-direction: column;
   justify-content: space-around;
   padding: 8px;
-  color: var(--text-color);
+  color: var(--text-light);
 }
 
 #read-post-container .read-post .profile-post .name span{
@@ -226,7 +226,7 @@ nav #searchbox {
 }
 
 .read-post .post-content {
-  color: var(--text-color);
+  color: var(--text-light);
   font-size: 20px;
   margin-left: 8%;
 }
@@ -275,7 +275,7 @@ nav #searchbox {
 }
 
 .reaction-info button{
-  background-color: var(--element-background)
+  background-color: var(--element-light)
 }
 
 .reaction-info i{
@@ -334,8 +334,8 @@ button.liked i{
 .comment .comment-content{
   margin-left: 10px;
   width: 95%;
-  background-color: var(--color-background);
-  color: var(--text-color);
+  background-color: var(--light-background);
+  color: var(--text-light);
   border-radius: 5px;
   padding: 10px;
   padding-top: 8px;
@@ -348,13 +348,56 @@ button.liked i{
 }
 
 :root{
-  --color-background: #f0f2f5;
+  --light-background: #f0f2f5;
+  --dark-background: #18191a;
+  --element-light: #ffffff;
+  --text-light: black;
+  --element-dark: #242526;
+  --text-dark: white;
+}
+
+html[data-theme="dark"]{
+  --dark-background: #f0f2f5;
+  --light-background: #18191a;
+  --element-dark: #ffffff;
+  --text-dark: black;
+  --element-light: #242526;
+  --text-light: white;
+}
+
+/* defalt color classes */
+/* .light-theme{
+  --color-background: ;
   --element-background: #ffffff;
   --text-color: black;
 }
 
 .dark-theme{
-  --color-background: #18191a;
+  --color-background: ;
   --element-background: #242526;
   --text-color: white;
+} */
+
+.light{
+  color: black;
+}
+
+.dark{
+  color:white;
+}
+
+.light-bg{
+  background-color: var(--light-background);
+}
+
+.dark-bg{
+  background-color: var(--dark-backgound);
+}
+
+.light-element{
+  background-color: var(--element-light);
+}
+
+.dark-element{
+  background-color: var(--element-dark);
 }

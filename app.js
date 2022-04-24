@@ -1,17 +1,29 @@
 // dark mode
-let currentTheme = localStorage.getItem("theme")
+// let currentTheme = localStorage.getItem("theme")
 
-if(currentTheme === "dark"){
-  document.body.classList("dark-theme")
-}
+// if(currentTheme === "dark"){
+//   document.body.classList("dark-theme")
+// }
 
-let changeTheme = document.getElementById("change-theme");
+// let changeTheme = document.getElementById("change-theme");
 
-changeTheme.onclick = function myDarkThemeClick(){
-  document.body.classList.toggle("dark-theme");
-  if(document.body.classList.contains("dark-theme")) {
-    localStorage.setItem(theme, "dark")
-  }
+// changeTheme.onclick = function myDarkThemeClick(){
+//   document.body.classList.toggle("dark-theme");
+//   if(document.body.classList.contains("dark-theme")) {
+//     localStorage.setItem(theme, "dark")
+//   }
+// }
+
+const changeTheme = document.getElementById("change-theme");
+changeTheme.onclick = function myDarkTheme(){
+    let currentTheme = html.getAttribute("data-theme");
+    console.log("hello world!")
+    if(currentTheme === "dark"){
+        setAttribute(data-theme, "light");
+    }
+    else{
+        setAttribute(data-theme, "dark")
+    }
 }
 
 // post array
@@ -159,17 +171,17 @@ function liked(){
 }
 
 // commment
-let coll = document.getElementById("comment");
-let i;
+// let coll = document.getElementById("comment");
+// let i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     let content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
