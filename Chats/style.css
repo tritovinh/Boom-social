@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 header {
@@ -46,8 +46,8 @@ nav .logo {
 
 nav #searchbox {
   border-radius: 20px;
-  background-color: var(--color-background);
-  color: var(--text-color);
+  background-color: var(--light-background);
+  color: var(--text-light);
   padding: 5px;
   margin: auto;
   font-size: 15px;
@@ -78,8 +78,8 @@ nav #searchbox {
   font-size: 25px;
   top: 10%;
   left: 15px;
-  background-color: var(--element-background);
-  color: var(--text-color);
+  background-color: var(--element-light);
+  color: var(--text-light);
   width: 15%;
   height: 85%;
   border-radius: 15px;
@@ -103,7 +103,7 @@ nav #searchbox {
   padding: 10px 0 10px 20px;
   text-decoration: none;
   display: block;
-  color: var(--text-color);
+  color: var(--text-light);
   font-size: 25px;
   cursor: pointer;
 }
@@ -117,9 +117,14 @@ nav #searchbox {
   display: flex;
 }
 
+.sidebar .account a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 #main-page {
   border-left: solid #ff6249 8px;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 /* Chat main css */
@@ -133,8 +138,8 @@ nav #searchbox {
   padding: 10px;
   position: fixed;
   border-radius: 15px;
-  color: var(--text-color);
-  background-color: var(--element-background);
+  color: var(--text-light);
+  background-color: var(--element-light);
 }
 
 .people-container{
@@ -146,21 +151,21 @@ nav #searchbox {
   width: 79%;
   height: 30px;
   padding-left: 5px;
-  border: solid 3px var(--text-color);
+  border: solid 3px var(--text-light);
   border-right: none;
   border-radius: 15px 0 0 15px;
-  color: var(--text-color);
-  background-color: var(--color-background);
+  color: var(--text-light);
+  background-color: var(--light-background);
 }
 
 .people-container button{
   display: inline;
   width:15%;
   height: 35px;
-  border: solid 3px var(--text-color);
+  border: solid 3px var(--text-light);
   border-left: none;
   border-radius: 0 15px 15px 0;
-  background-color: var(--color-background)
+  background-color: var(--light-background)
 }
 
 .contact-container{
@@ -174,11 +179,11 @@ nav #searchbox {
   justify-content: space-around;
   border-radius: 15px;
   margin: 5px 0 5px 0;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 .contact:hover{
-  border: solid 3px var(--text-color);
+  border: solid 3px var(--text-light);
 }
 
 .contact img{
@@ -211,7 +216,7 @@ nav #searchbox {
   justify-content: space-between;
   flex-direction: column;
   border-radius: 15px;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 .chat-name{
@@ -219,7 +224,7 @@ nav #searchbox {
   height: 45px;
   padding: 5px;
   margin: 0 5px 5px 5px;
-  border: solid 1px var(--text-color);
+  border: solid 1px var(--text-light);
   border-radius: 15px;
   display:flex;
   justify-content: left;
@@ -270,9 +275,9 @@ nav #searchbox {
 }
 
 .chats .guest-chat p{
-  border: solid 3px var(--text-color);
-  background-color: var(--element-background);
-  color: var(--text-color);
+  border: solid 3px var(--text-light);
+  background-color: var(--element-light);
+  color: var(--text-light);
   border-radius: 0 15px 15px 15px;
   padding: 5px;
 }
@@ -288,9 +293,9 @@ nav #searchbox {
 }
 
 .chats .my-chat p{
-  border: solid 3px var(--text-color);
+  border: solid 3px var(--text-light);
   background-color: #f5715c;
-  color: var(--text-color);
+  color: var(--text-light);
   border-radius: 15px 15px 0 15px;
   padding: 5px;
 }
@@ -306,13 +311,13 @@ nav #searchbox {
 }
 
 .chat-content .type-bar button{
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 .chat-content .type-bar i{
   font-size: 30px;
   color: #ff6249;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 .chat-content .type-bar input{
@@ -328,13 +333,43 @@ nav #searchbox {
 
 /* dark mode */
 :root{
-  --color-background: #f0f2f5;
-  --element-background: #ffffff;
-  --text-color: black;
+  --light-background: #f0f2f5;
+  --dark-background: #18191a;
+  --element-light: #ffffff;
+  --text-light: black;
+  --element-dark: #242526;
+  --text-dark: white;
 }
 
-.dark-theme{
-  --color-background: #18191a;
-  --element-background: #242526;
-  --text-color: white;
+html[data-theme="dark"]{
+  --dark-background: #f0f2f5;
+  --light-background: #18191a;
+  --element-dark: #ffffff;
+  --text-dark: black;
+  --element-light: #242526;
+  --text-light: white;
+}
+
+.light{
+  color: black;
+}
+
+.dark{
+  color:white;
+}
+
+.light-bg{
+  background-color: var(--light-background);
+}
+
+.dark-bg{
+  background-color: var(--dark-backgound);
+}
+
+.light-element{
+  background-color: var(--element-light);
+}
+
+.dark-element{
+  background-color: var(--element-dark);
 }

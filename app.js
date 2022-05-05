@@ -1,4 +1,5 @@
 // dark mode
+
 // let currentTheme = localStorage.getItem("theme")
 
 // if(currentTheme === "dark"){
@@ -14,17 +15,29 @@
 //   }
 // }
 
-const changeTheme = document.getElementById("change-theme");
-changeTheme.onclick = function myDarkTheme(){
-    let currentTheme = html.getAttribute("data-theme");
-    console.log("hello world!")
-    if(currentTheme === "dark"){
-        setAttribute(data-theme, "light");
-    }
-    else{
-        setAttribute(data-theme, "dark")
-    }
-}
+// const changeTheme = document.getElementById("change-theme");
+// changeTheme.onclick = function myDarkTheme(){
+//     const theme = document.getElementsByTagName("html")
+//     const currentTheme = theme.setAttribute("data-theme");
+//     if(currentTheme === "dark"){
+//         document.getElementsByTagName("html").setAttribute("data-theme", "light");
+//     }
+//     else{ 
+//         document.getElementsByTagName("html").setAttribute("data-theme", "dark");
+//     }
+// }
+
+$(document).ready(function(){
+    $("#change-theme").on('click', function(){
+        let currentTheme = $("html").attr("data-theme");
+        if(currentTheme === "dark"){
+            $("html").attr("data-theme", "light");
+        }
+        else if (currentTheme === "light"){
+            $("html").attr("data-theme", "dark");
+        }
+    })
+})
 
 // post array
 let mainPost = [

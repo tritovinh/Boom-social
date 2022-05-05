@@ -347,6 +347,19 @@ button.liked i{
   margin-bottom: 8px;
 }
 
+/* defalt color classes */
+/* .light-theme{
+  --color-background: ;
+  --element-background: #ffffff;
+  --text-color: black;
+}
+
+.dark-theme{
+  --color-background: ;
+  --element-background: #242526;
+  --text-color: white;
+} */
+
 :root{
   --light-background: #f0f2f5;
   --dark-background: #18191a;
@@ -365,18 +378,7 @@ html[data-theme="dark"]{
   --text-light: white;
 }
 
-/* defalt color classes */
-/* .light-theme{
-  --color-background: ;
-  --element-background: #ffffff;
-  --text-color: black;
-}
 
-.dark-theme{
-  --color-background: ;
-  --element-background: #242526;
-  --text-color: white;
-} */
 
 .light{
   color: black;

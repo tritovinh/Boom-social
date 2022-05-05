@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 
 header {
@@ -23,7 +23,7 @@ nav {
   justify-content: space-around;
   font-size: 40px;
   border-radius: 15px;
-  background-color: var(--element-background);
+  background-color: var(--element-light);
   margin: 10px 0 10px 0;
   cursor: pointer;
 }
@@ -46,8 +46,8 @@ nav .logo {
 
 nav #searchbox {
   border-radius: 20px;
-  background-color: var(--color-background);
-  color: var(--text-color);
+  background-color: var(--light-background);
+  color: var(--text-light);
   padding: 5px;
   margin: auto;
   font-size: 15px;
@@ -78,8 +78,8 @@ nav #searchbox {
   font-size: 25px;
   top: 10%;
   left: 15px;
-  background-color: var(--element-background);
-  color: var(--text-color);
+  background-color: var(--element-light);
+  color: var(--text-light);
   width: 15%;
   height: 85%;
   border-radius: 15px;
@@ -103,7 +103,7 @@ nav #searchbox {
   padding: 10px 0 10px 20px;
   text-decoration: none;
   display: block;
-  color: var(--text-color);
+  color: var(--text-light);
   font-size: 25px;
   cursor: pointer;
 }
@@ -117,9 +117,14 @@ nav #searchbox {
   display: flex;
 }
 
+.sidebar .account a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 #main-page {
   border-left: solid #ff6249 8px;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
 }
 /* video container style */
 .videos-container {
@@ -130,8 +135,8 @@ nav #searchbox {
     padding: 10px;
     position: fixed;
     border-radius: 15px;
-    color: var(--text-color);
-    background-color: var(--element-background);
+    color: var(--text-light);
+    background-color: var(--element-light);
 }
 
 .type-container{
@@ -141,7 +146,7 @@ nav #searchbox {
   margin: auto;
   margin-bottom: 10px;
   font-size: 20px;
-  background-color: var(--color-background);
+  background-color: var(--light-background);
   padding: 5px;
   border-radius: 15px;
 }
@@ -152,12 +157,12 @@ nav #searchbox {
   width: 30%;
   border-radius: 15px;
   border: none;
-  background-color: var(--color-background);
-  color: var(--text-color);
+  background-color: var(--light-background);
+  color: var(--text-light);
 }
 
 .type-container button:hover {
-  background-color: var(--element-background);
+  background-color: var(--element-light);
 }
 
 .type-container button.active {
@@ -189,13 +194,45 @@ nav #searchbox {
 
 /* dark mode */
 :root{
-  --color-background: #f0f2f5;
-  --element-background: #ffffff;
-  --text-color: black;
+  --light-background: #f0f2f5;
+  --dark-background: #18191a;
+  --element-light: #ffffff;
+  --text-light: black;
+  --element-dark: #242526;
+  --text-dark: white;
 }
 
-.dark-theme{
-  --color-background: #18191a;
-  --element-background: #242526;
-  --text-color: white;
+html[data-theme="dark"]{
+  --dark-background: #f0f2f5;
+  --light-background: #18191a;
+  --element-dark: #ffffff;
+  --text-dark: black;
+  --element-light: #242526;
+  --text-light: white;
+}
+
+
+
+.light{
+  color: black;
+}
+
+.dark{
+  color:white;
+}
+
+.light-bg{
+  background-color: var(--light-background);
+}
+
+.dark-bg{
+  background-color: var(--dark-backgound);
+}
+
+.light-element{
+  background-color: var(--element-light);
+}
+
+.dark-element{
+  background-color: var(--element-dark);
 }
