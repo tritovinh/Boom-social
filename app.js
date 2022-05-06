@@ -45,7 +45,7 @@ let mainPost = [
         profilePic: "https://pbs.twimg.com/media/Dyg-OCfW0AA9dKp.jpg",
         name: "Buff Garfield",
         profileName: "@Buff1999",
-        content: "I have arivved to Paris",
+        content: "I have arrived to Paris",
         pic1: "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
         pic2: "",
         pic3: "",
@@ -198,3 +198,39 @@ function liked(){
 //     }
 //   });
 // }
+
+// after sign in 
+let username = localStorage.getItem("userName")
+let accountName = localStorage.getItem("accountName")
+let profile = localStorage.getItem("profilePic")
+
+let account = document.getElementById("account")
+let writePost = document.getElementById("write-post")
+if ( username == null){
+    account.innerHTML +=`
+        <i class="fas fa-solid fa-universal-access"></i>
+        <a href="./login/login.html" id="accountName">Login</a>
+    `
+    writePost.innerHTML += `
+        <i class="fas fa-solid fa-user"></i>
+        <input type="text" placeholder="What happened?" id="post-writing">
+        <button type="button" class="post-button2">Booming</button>
+    `
+} else{
+    account.innerHTML +=`
+        <img src="${profile}" alt="">
+        <span class="account_name">${username}</span>
+    `
+    writePost.innerHTML += `
+        <img src="${profile}" alt="">
+        <input type="text" placeholder="What happened?" id="post-writing">
+        <button type="button" class="post-button2">Booming</button>
+    `
+}
+
+
+// log out button
+function logOut(){
+    localStorage.removeItem("userName")
+    window.location.replace("../index.html")
+}

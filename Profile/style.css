@@ -65,6 +65,26 @@ nav #searchbox {
   text-transform: uppercase;
   text-align: center;
   background-color: #ff6249;
+  color: var(--light-background);
+  font-weight: bold;
+}
+
+.logout-btn {
+  border-radius: 25px;
+  padding: 5px;
+  height: 70%;
+  width: 30%;
+  margin: auto;
+  margin-left: 10px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.logout-btn:hover{
+  background-color: #ff6249;
+  color: white;
 }
 
 .post-button:hover{
@@ -117,9 +137,17 @@ nav #searchbox {
   display: flex;
 }
 
-.sidebar .account a{
+.sidebar .account img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.sidebar .account a,.account_name{
   color: var(--text-color);
   text-decoration: none;
+  margin: auto;
+  text-transform: capitalize;
 }
 
 #main-page {
@@ -159,7 +187,7 @@ nav #searchbox {
 
 .profile-info-container .profile-pic img{
   height: 100%;
-  width: auto;
+  width: 300px;
   border-radius: 50%;
   border: solid 5px var(--light-background);
 }
@@ -183,6 +211,7 @@ nav #searchbox {
 
 .profile-info-container .profile-info .name #realName{
   font-size: 35px;
+  text-transform: capitalize;
 }
 
 .profile-info-container .profile-info .info{

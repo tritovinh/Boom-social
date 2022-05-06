@@ -65,6 +65,26 @@ nav #searchbox {
   text-transform: uppercase;
   text-align: center;
   background-color: #ff6249;
+  color: var(--light-background);
+  font-weight: bold;
+}
+
+.logout-btn {
+  border-radius: 25px;
+  padding: 5px;
+  height: 70%;
+  width: 30%;
+  margin: auto;
+  margin-left: 10px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.logout-btn:hover{
+  background-color: #ff6249;
+  color: white;
 }
 
 .post-button:hover{
@@ -115,11 +135,21 @@ nav #searchbox {
   border-radius: 15px;
   height: auto;
   display: flex;
+  overflow: hidden;
 }
 
-.sidebar .account a{
+.sidebar .account img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.sidebar .account a,.account_name{
+  font-size: 25px;
   color: var(--text-color);
   text-decoration: none;
+  margin: auto;
+  text-transform: capitalize;
 }
 
 #main-page {
@@ -152,6 +182,13 @@ nav #searchbox {
   padding: 5px;
 }
 
+#write-post img{
+  border-radius: 50%;
+  height: 90%;
+  width: 65px;
+  margin: auto;
+}
+
 .post-button2 {
   border-radius: 25px;
   padding: 5px;
@@ -162,12 +199,13 @@ nav #searchbox {
   text-transform: uppercase;
   text-align: center;
   background-color: #e4e6eb;
+  font-weight: bold;
 }
 
 .post-button2:hover{
   background-color: #ff6249;
   color: white;
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 #post-writing {

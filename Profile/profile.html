@@ -23,6 +23,7 @@
             <div class="searchbar">
                 <input type="text" id="searchbox" placeholder="Find your friends" autocomplete="off">
                 <button type="button" class="post-button">Booming</button>
+                <button type="button" class="logout-btn" onclick="logOut()">Log out</button>
             </div>
         </nav>
     </header>
@@ -50,27 +51,27 @@
             </a>
             <p class="menu-item" id="change-theme">Dark mode</p>
         </div>
-        <div class="account">
-            <i class="fas fa-solid fa-universal-access"></i>
-            <a href="../login/login.html" id="accountName">Login</a>
+        <div class="account" id="account">
+            <!-- <i class="fas fa-solid fa-universal-access"></i>
+            <a href="../login/login.html" id="accountName">Login</a> -->
         </div>
     </div>
     <div class="profile-container">
         <div class="profile-info-container">
-            <div class="background-pic">
-                <img src="https://c4.wallpaperflare.com/wallpaper/122/607/789/family-guy-beautiful-backgrounds-desktop-wallpaper-preview.jpg" alt="">
+            <div class="background-pic" id="background-pic">
+                <!-- <img src="https://c4.wallpaperflare.com/wallpaper/122/607/789/family-guy-beautiful-backgrounds-desktop-wallpaper-preview.jpg" alt=""> -->
             </div>
-            <div class="profile-pic">
-                <img src="https://media.baamboozle.com/uploads/images/290734/1623915052_70635_url.jpeg" alt="">
+            <div class="profile-pic" id="profile-pic">
+                <!-- <img src="https://media.baamboozle.com/uploads/images/290734/1623915052_70635_url.jpeg" alt=""> -->
             </div>
             <div class="profile-info">
-                <div class="name">
-                    <p id="realName">Tri To Vinh</p>
-                    <p id="accountName">@tritovinh1</p>
+                <div class="name" id="name">
+                    <p id="realName"></p>
+                    <p id="accountName"></p>
                 </div>
                 <div class="info">
-                    <i class="fa-solid fa-location-dot"> </i><span id="livingPlace">Ho Chi Minh city</span>
-                    <i class="fa-solid fa-cake-candles"> </i><span id="birthday">27 June 2006</span>
+                    <i class="fa-solid fa-location-dot"> </i><span id="livingPlace"> Ho Chi Minh city</span>
+                    <i class="fa-solid fa-cake-candles"> </i><span id="birthday"> 27 June 2006</span>
                 </div>
             </div>
             <div class="edit">
