@@ -207,22 +207,12 @@ let writePost = document.getElementById("write-post")
 if ( username == null){
     account.innerHTML +=`
         <i class="fas fa-solid fa-universal-access"></i>
-        <a href="./login/login.html" id="accountName">Login</a>
-    `
-    writePost.innerHTML += `
-        <i class="fas fa-solid fa-user"></i>
-        <input type="text" placeholder="What happened?" id="post-writing">
-        <button type="button" class="post-button2">Booming</button>
+        <a href="../login/login.html" id="accountName">Login</a>
     `
 } else{
     account.innerHTML +=`
         <img src="${profile}" alt="">
         <span class="account_name">${username}</span>
-    `
-    writePost.innerHTML += `
-        <img src="${profile}" alt="">
-        <input type="text" placeholder="What happened?" id="post-writing">
-        <button type="button" class="post-button2">Booming</button>
     `
 }
 

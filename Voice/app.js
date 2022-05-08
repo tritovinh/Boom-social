@@ -50,7 +50,7 @@ let followarr = [
         status: "Live",
     },
     {
-        title: "Facebook change to Metaverse",
+        title: "Facebook change to Meta",
         description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
         hostPic: "https://i.etsystatic.com/15418561/c/2250/1788/0/230/il/f06c80/3233862560/il_340x270.3233862560_jwqd.jpg",
         hostName: "Daniel Howard",
@@ -61,6 +61,20 @@ let followarr = [
         description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
         hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
         hostName: "Joey Towen",
+        status: "Live",
+    },
+    {
+        title: "Mars is the next",
+        description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
+        hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
+        hostName: "Joey Towen",
+        status: "Live",
+    },
+    {
+        title: "Predict the future",
+        description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
+        hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
+        hostName: "Tobey Towen",
         status: "Live",
     },
 ];
@@ -101,11 +115,32 @@ let populararr = [
         status: "Live",
     },
     {
-        title: "Bitcoin gonna died",
+        title: "Wether today",
+        description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
+        hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
+        hostName: "Diana Howard",
+        status: "Live",
+    },
+    {
+        title: "The world gonna died",
         description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
         hostPic: "https://i.etsystatic.com/15418561/c/2250/1788/0/230/il/f06c80/3233862560/il_340x270.3233862560_jwqd.jpg",
         hostName: "Tom Towen",
         status: "4 days ago",
+    },
+    {
+        title: "Night talk",
+        description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
+        hostPic: "https://data.whicdn.com/images/344524632/original.jpg",
+        hostName: "John Smith",
+        status: "Live",
+    },
+    {
+        title: "Javascript can replace others",
+        description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
+        hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
+        hostName: "Diana Howard",
+        status: "2 weeks ago",
     },
 ];
 
@@ -138,7 +173,7 @@ let Topicarr = [
         status: "Live",
     },
     {
-        title: "Facebook change to Metaverse",
+        title: "Facebook change to Meta",
         description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
         hostPic: "https://i.etsystatic.com/15418561/c/2250/1788/0/230/il/f06c80/3233862560/il_340x270.3233862560_jwqd.jpg",
         hostName: "Daniel Howard",
@@ -149,6 +184,13 @@ let Topicarr = [
         description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
         hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
         hostName: "Joey Towen",
+        status: "Live",
+    },
+    {
+        title: "Predict the future",
+        description: "lorem ipsum dolor sit amet, consectetur. lorem ipsum dolor",
+        hostPic: "https://cutewallpaper.org/25/animated-wallpaper-for-profile-pics/3955398.jpg",
+        hostName: "Tobey Towen",
         status: "Live",
     },
 ];
@@ -183,22 +225,12 @@ let writePost = document.getElementById("write-post")
 if ( username == null){
     account.innerHTML +=`
         <i class="fas fa-solid fa-universal-access"></i>
-        <a href="./login/login.html" id="accountName">Login</a>
-    `
-    writePost.innerHTML += `
-        <i class="fas fa-solid fa-user"></i>
-        <input type="text" placeholder="What happened?" id="post-writing">
-        <button type="button" class="post-button2">Booming</button>
+        <a href="../login/login.html" id="accountName">Login</a>
     `
 } else{
     account.innerHTML +=`
         <img src="${profile}" alt="">
         <span class="account_name">${username}</span>
-    `
-    writePost.innerHTML += `
-        <img src="${profile}" alt="">
-        <input type="text" placeholder="What happened?" id="post-writing">
-        <button type="button" class="post-button2">Booming</button>
     `
 }
 
