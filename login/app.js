@@ -52,11 +52,14 @@ window.onclick = function (event) {
 
 
 // sign up 
-const signUpForm = document.getElementsByClassName("signup-form")
+let newName = document.getElementById("newName")
+let newUsername = document.getElementById("newUsername")
+let newPassword = document.getElementById("newPassword")
 function signup() {
-    let name = signUpForm[2].value.toLowerCase();
-    let usernameLogin = signUpForm[3].value.toLowerCase();
-    let password = signUpForm[4].value.toLowerCase();
-    let dateOfBirth = signUpForm[5].value.toLowerCase();
-    console.log("sign up success");
+    localStorage.setItem("accountName", newUsername.value)
+    localStorage.setItem("userName", newName.value)
+    localStorage.setItem("profilePic", "https://www.chamber-music.org/sites/all/themes/custom/cma/images/profile-photo-empty.png")
+    localStorage.setItem("backgroundPic", "https://www.kaindl.com/fileadmin/_processed_/d/8/csm_2162_PE_Dekorbild_0ec3e17e00.jpg")
+    console.log(newName.value)
+    window.location.replace("../index.html")
 }

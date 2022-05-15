@@ -69,8 +69,8 @@ renderFollow();
 
 let musicarr = [
     {
-        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/2fDzCWNS3ig\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-        tittle:"The Weeknd - Out of Time (Official Video)"
+        video: "<iframe width=\"1520\" height=\"673\" src=\"https://www.youtube.com/embed/TO-_3tck2tg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Imagine Dragons - Bones (Official Music Video)"
     },
     {
         video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/WFsAon_TWPQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
@@ -151,9 +151,13 @@ let newsarr = [
         video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/oyNCOgNxAtM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
         tittle:"Russia is focusing on Eastern Ukraine. Retired general explains how to stop them"
     },
-       {
+    {
         video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/lRkLhhSz3cU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
         tittle:"Support Growing Within EU For Russian Oil Embargo"
+    },
+    {
+        video: "<iframe width=\"1691\" height=\"766\" src=\"https://www.youtube.com/embed/D1CQWsGdbKI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        tittle:"Russia's reaction to Finland wanting to join NATO"
     },
 ];
 let newsVideo = document.getElementById("News")
